@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn Those Letters.</title>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+</head>
+<body>
+    <nav>
+        <h1 id="title">Learn Your Letters.</h1>
+    </nav>
+    <main>
+        <div id="intro">
+            <p class="font-s">Click arrows or press an arrow key for a new card.<br>Click the card or press enter for a hint.</p>
+        </div>
+        <div id="card-container">
+            <div id="card">
+                <div id="front" class="side front">
+                    <h1 id="letter">A</h1>
+                </div>
+                <div id="back" class="side back">
+                    <p id="letter-hint">A is for:</p>
+                    <img id="img" src="images/apple.jpg"></img>
+                </div>
+            </div>
+            <a class="left" onclick="randomLetter()">❮</a> <a class="right" onclick="randomLetter()">❯</a> 
+        </div>
+    </main>
+<script src="js/generateletter.js"></script>
+<script src="js/cardflip.js"></script>
+</body>
+</html>

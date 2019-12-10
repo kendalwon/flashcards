@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cutive Mono', monospace;
+    overflow: hidden;
+}
+
+nav {
+    background-color: #4257b2;
+    color: white;
+    height: 50px;
+}
+
+#title {
+    margin: 0;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+    #title:hover {
+        color: #aae0ff;
+    }
+
+main {
+    background-color: #ffffff;
+    height: 100vh;
+    text-align: center;
+}
+
+.card-container {
+    display: none;
+    background-color: #ffffff;
+    height: 350px;
+    width: 600px; 
+    max-height: 600px;
+    position: fixed;  
+    top: 150px;
+    left: 50%;
+    margin-left: -300px;
+    perspective: 1000px;
+}
+    .active {
+        display: block;
+    }
+
+.card {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: all .5s ease-in-out;
+}
+
+.side {
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: -5px 5px 20px;
+}
+
+.font-l {
+    font-size: 160px; 
+}
+.font-s { 
+    font-size: 40px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+button {
+    color: #4257b2;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    button:hover {
+        background-color: #4257b2;
+        color: #aae0ff;
+    }
+
+#okay {
+    font-size: 20px;
+    margin: 40px auto;
+}
+
+#instructions {
+    font-size: 18px;
+    padding: 20px;
+}
+
+#note-img {
+    width: 100%;
+    height: 100%;
+}
+
+#letter-img, #number-img {
+    margin: auto;
+    max-height: 280px;
+}
+
+#letter, #number {
+    margin: auto;
+}
+
+#letter-hint, #number-hint {
+    margin: 10px auto;
+}
+
+
+#note-answer {
+    margin-top: 130px;
+    font-size: 36px;
+}
+
+.left, .right {  
+    cursor: pointer;  
+    position: absolute;  
+    top: 50%;  
+    width: auto;  
+    padding: 10px;  
+    margin-top: -30px;  
+    color: rgba(115, 115, 115, 0.25);  
+    font-size: 24px;  
+    transition: 0.6s ease;  
+    border-radius: 0 3px 3px 0;  
+  } 
+  
+.left {
+    left: -50px;
+}
+.right {  
+    right: -50px;  
+    border-radius: 3px 0 0 3px;  
+  }  
+    .left:hover, .right:hover {  
+        background-color: rgba(115, 115, 115, 0.5); 
+        color: white; 
+    }  

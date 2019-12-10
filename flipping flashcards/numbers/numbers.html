@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn Those Numbers.</title>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+</head>
+<body>
+    <nav>
+        <h1 id="title">Learn Your Numbers.</h1>
+    </nav>
+    <main>
+        <div id="intro">
+            <p class="font-s">Click arrows or press an arrow key for a new card.<br>Click the card or press enter for a hint.</p>
+        </div>
+        <div id="card-container">
+            <div id="card">
+                <div id="front" class="side front">
+                    <h1 id="number">7</h1>
+                </div>
+                <div id="back" class="side back">
+                    <p id="number-hint">This is 7 dots:</p>
+                    <img id="img" src="images/7.jpg"></img>
+                </div>
+            </div>
+            <a class="left" onclick="randomNumber()">❮</a> <a class="right" onclick="randomNumber()">❯</a> 
+        </div>
+        
+    </main>
+<script src="js/generatenumber.js"></script>
+<script src="js/cardflip.js"></script>
+</body>
+</html>

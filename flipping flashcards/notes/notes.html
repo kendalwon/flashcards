@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn Those Notes.</title>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+</head>
+<body>
+    <nav>
+        <h1 id="title">Learn Your Notes.</h1>
+    </nav>
+    <main>
+        <div id="intro">
+            <p class="font-s">Click arrows or press an arrow key for a new card.<br>Click the card or press enter to reveal the note.</p>
+        </div>
+        <div id="card-container">
+            <div id="card">
+                <div id="front" class="side front">
+                    <img id="img" src="media/images/a.jpg"></img>
+                </div>
+                <div id="back" class="side back">
+                    <div id="answer-box">
+                        <p id="answer">This is the <span style='font-size:60px'>A</span> note.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left" onclick="randomNote()">❮</a> <a class="right" onclick="randomNote()">❯</a> 
+        </div>
+        <div id="response">
+            <button id="a-button" type="button" name="A" value="A">A</button> 
+            <button id="b-button" type="button" name="B" value="B">B</button> 
+            <button id="c-button" type="button" name="C" value="C">C</button> 
+            <button id="d-button" type="button" name="D" value="D">D</button> 
+            <button id="e-button" type="button" name="E" value="E">E</button> 
+            <button id="f-button" type="button" name="F" value="F">F</button> 
+            <button id="g-button" type="button" name="G" value="G">G</button> 
+        </div>
+        <div id="score">
+            <audio id="wrong-sound" src="media/sounds/wrong.wav"></audio>
+            <p><span id="current-score"></span></p>
+        </div>
+    </main>
+<script src="js/generatenote.js"></script>
+<script src="js/cardflip.js"></script>
+</body>
+</html>

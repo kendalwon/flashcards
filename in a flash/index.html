@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>learning in a flash.</title>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+</head>
+<body>
+    <nav>
+        <a id="title" href="">Learn.</a>
+    </nav>
+    <main>
+        <div id="instructions-div">
+            <h1 id="instructions"></h1>
+        </div>
+        <div id="intro-card-container" class="card-container active">
+            <div id="intro-card" class="card">
+                <div id="front" class="side front font-s">
+                    <p class="intro">Select what you'd like to learn today:</p>
+                    <button class="button" onclick="loadLetters()">Letters</button>
+                    <button class="button" onclick="loadNumbers()">Numbers</button>
+                    <button class="button" onclick="loadNotes()">Notes</button>
+                    <p id="okay"></p>
+                </div>
+                <div id="back" class="side back">
+                        
+                </div>
+            </div>
+        </div>
+        
+        <div id="letters-card-container" class="card-container">
+            <div id="letter-card" class="card">
+                <div id="front" class="side front font-l">
+                    <h1 id="letter">A</h1>
+                </div>
+                <div id="back" class="side back">
+                    <p id="letter-hint"><span style='font-size:36px'>A</span> is for:</p>
+                    <img id="letter-img" src="images/apple.jpg"></img>
+                </div>
+            </div>
+            <a class="left" onclick="randomLetter()">❮</a> <a class="right" onclick="randomLetter()">❯</a> 
+        </div>
+
+        <div id="numbers-card-container" class="card-container">
+            <div id="number-card"  class="card">
+                <div id="front" class="side front font-l">
+                    <h1 id="number">7</h1>
+                </div>
+                <div id="back" class="side back">
+                    <p id="number-hint">This is <span style='font-size:36px'>7</span> dots:</p>
+                    <img id="number-img" src="images/7.jpg"></img>
+                </div>
+            </div>
+            <a class="left" onclick="randomNumber()">❮</a> <a class="right" onclick="randomNumber()">❯</a> 
+        </div>
+
+        <div id="notes-card-container" class="card-container">
+            <div id="note-card"  class="card">
+                <div id="front" class="side front">
+                    <img id="note-img" src="images/a.jpg"></img>
+                </div>
+                <div id="back" class="side back">
+                    <div id="answer-box">
+                        <p id="note-answer">This is the <span style='font-size:60px'>A</span> note.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="left" onclick="randomNote()">❮</a> <a class="right" onclick="randomNote()">❯</a> 
+        </div>
+    </main>
+<script src="js/generatenote.js"></script>
+<script src="js/generateletter.js"></script>
+<script src="js/generatenumber.js"></script>
+<script src="js/cardflip.js"></script>
+<script src="js/selector.js"></script>
+</body>
+</html>
