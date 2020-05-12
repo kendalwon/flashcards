@@ -1,6 +1,6 @@
 const multNumbers = [0,1,2,3,4,5,6,7,8,9,10];
     
-function setMultiplication() {
+const setMultiplication = () => {
     let index = Math.floor(Math.random() * 11);
     let index2 = Math.floor(Math.random() * 11);
         let a = multNumbers[index];
@@ -10,7 +10,7 @@ function setMultiplication() {
         answer.innerHTML = `${c}`;
 }
 
-function randomMultiplication() {
+const randomMultiplication = () => {
     if (generatedCard.classList.contains('flipped')) {
         generatedCard.classList.remove('flipped');
         setTimeout(function(){setMultiplication()}, 500);
