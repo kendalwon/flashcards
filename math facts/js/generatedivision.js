@@ -37,7 +37,7 @@ const divNumbers = [
     [1,1]
 ];
 
-function setDivision() {
+const setDivision = () => {
     let index = Math.floor(Math.random() * 36);
     let a = divNumbers[index][0];
     let b = divNumbers[index][1];
@@ -46,7 +46,7 @@ function setDivision() {
     answer.innerHTML = `${c}`;
 }
 
-function randomDivision() {
+const randomDivision = () => {
     if (generatedCard.classList.contains('flipped')) {
         generatedCard.classList.remove('flipped');
         setTimeout(function(){setDivision()}, 500);

@@ -3,7 +3,7 @@ const introContainer = document.getElementById('intro-card-container');
 const instructions = document.getElementById('instructions');
 const transition = document.getElementById('transition');
 
-function removeListeners() {
+const removeListeners = () => {
     left.removeEventListener('click', randomAddition);
     left.removeEventListener('click',randomSubtraction);
     left.removeEventListener('click',randomMultiplication);
@@ -14,7 +14,7 @@ function removeListeners() {
     right.removeEventListener('click', randomDivision);
 }
 
-function loadAddition() {
+const loadAddition = () => {
     if (introContainer.classList.contains('active')) {
         intro.innerHTML = "Okay. Let's practice adding!";
         delayedFlip();
@@ -50,7 +50,7 @@ function loadAddition() {
     }
 }
 
-function loadSubtraction() {
+const loadSubtraction = () => {
     if (introContainer.classList.contains('active')) {
         intro.innerHTML = "All right! Let's try subtracting.";
         delayedFlip();
@@ -86,7 +86,7 @@ function loadSubtraction() {
     }
 }
 
-function loadMultiplication() {
+const loadMultiplication = () => {
     if (introContainer.classList.contains('active')) {
         intro.innerHTML = "Sure! Let's multiply.";
         delayedFlip();
@@ -122,7 +122,7 @@ function loadMultiplication() {
     }
 }
 
-function loadDivision() {
+const loadDivision = () => {
     if (introContainer.classList.contains('active')) {
         intro.innerHTML = "Great! Let's do some division.";
         delayedFlip();

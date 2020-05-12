@@ -2,13 +2,13 @@ const introCard = document.getElementById('intro-card');
 const generatedContainer = document.getElementById('generated-card-container');
 const generatedCard = document.getElementById('generated-card');
 
-function flipCard() {
+const flipCard = () => {
     if (generatedContainer.classList.contains('active'))  {
        generatedCard.classList.toggle('flipped'); 
     }
 }
 
-function delayedFlip() {
+const delayedFlip = () => {
     setTimeout(function() {
         introCard.classList.toggle('flipped');
     }, 800);
