@@ -74,7 +74,6 @@ const randomAddition = () => {
     setButtons();
 }
 
-
 let correct = 0;
 let total = 0;
 const checkAnswer = (e) => {

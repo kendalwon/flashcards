@@ -111,7 +111,7 @@ const front = document.getElementById('front');
 const back = document.getElementById('back');
 const card = document.getElementById('card');
 
-function setLetter() {
+const setLetter = () => {
     let index = Math.floor(Math.random() * 52);
     let currentLetter = letters[index].letter;
     let currentLetterImg = letters[index].image;
@@ -120,7 +120,7 @@ function setLetter() {
     hint.innerHTML = `<span style='font-size:36px'>${currentLetter}</span> is for:`;
 }
 
-function randomLetter() {
+const randomLetter = () => {
     if (card.classList.contains('flipped')) {
         card.classList.remove('flipped');
         setTimeout(function(){setLetter()}, 500);

@@ -1,4 +1,4 @@
-function flipCard() {
+const flipCard = () => {
     card.classList.toggle('flipped');
 }
 

@@ -50,7 +50,7 @@ const front = document.getElementById('front');
 const back = document.getElementById('back');
 const card = document.getElementById('card');
 
-function setNumber() {
+const setNumber = () => {
     let index = Math.floor(Math.random() * 21);
         let currentNumber = numbers[index].number;
         let currentNumberImg = numbers[index].image;
@@ -63,7 +63,7 @@ function setNumber() {
     }
 }
 
-function randomNumber() {
+const randomNumber = () => {
     if (card.classList.contains('flipped')) {
         card.classList.remove('flipped');
         setTimeout(function(){setNumber()}, 500);
