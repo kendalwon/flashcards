@@ -1,6 +1,6 @@
 const introCard = document.getElementById('intro-card');
 
-function flipCard() {
+const flipCard = () => {
     if (lettersContainer.classList.contains('active'))  {
        letterCard.classList.toggle('flipped'); 
     } else if (numbersContainer.classList.contains('active')) {
@@ -10,7 +10,7 @@ function flipCard() {
     }  
 }
 
-function delayedFlip() {
+const delayedFlip = () => {
     setTimeout(function() {
         introCard.classList.toggle('flipped');
     }, 800);

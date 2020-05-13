@@ -109,7 +109,7 @@ const letterHint = document.getElementById('letter-hint');
 
 const letterCard = document.getElementById('letter-card');
 
-function setLetter() {
+const setLetter = () => {
     let index = Math.floor(Math.random() * 52);
     let currentLetter = letters[index].letter;
     let currentLetterImg = letters[index].image;
@@ -118,7 +118,7 @@ function setLetter() {
     letterHint.innerHTML = `<span style='font-size:36px'>${currentLetter}</span> is for:`;
 }
 
-function randomLetter() {
+const randomLetter = () => {
     if (letterCard.classList.contains('flipped')) {
         letterCard.classList.remove('flipped');
         setTimeout(function(){setLetter()}, 500);

@@ -48,7 +48,7 @@ const numberHint = document.getElementById('number-hint');
 
 const numberCard = document.getElementById('number-card');
 
-function setNumber() {
+const setNumber = () => {
     let index = Math.floor(Math.random() * 21);
         let currentNumber = numbers[index].number;
         let currentNumberImg = numbers[index].image;
@@ -61,7 +61,7 @@ function setNumber() {
     }
 }
 
-function randomNumber() {
+const randomNumber = () => {
     if (numberCard.classList.contains('flipped')) {
         numberCard.classList.remove('flipped');
         setTimeout(function(){setNumber()}, 500);
