@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>math in a flash.</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>math in a flash.</title>    
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
 </head>
 <body>
-    <nav id="top-nav">
-        <div class="top-nav-items">
-            <a id="title" href="mathflash.html">math facts.</a>
-            <div id="dropdown-button">
-                <i id="hamburger" class="fas fa-bars"></i>
-            </div>
-            <div class="dropdown-content" class="show">
-                <a class="dropdown-item" href="">Home</a>
-                <a class="dropdown-item" href="">About</a>
-                <a class="dropdown-item" href="">Contact</a>
-            </div>
-        </div>    
-    </nav>
-    <div id="main-container">
+  <nav id="top-nav">
+    <div class="top-nav-items">
+      <a id="title" href="mathflash.html">math facts.</a>
+      <div id="dropdown-button">
+        <i id="hamburger" class="fas fa-bars"></i>
+      </div>
+      <div class="dropdown-content" class="show">
+        <a class="dropdown-item" href="">Home</a>
+        <a class="dropdown-item" href="">About</a>
+        <a class="dropdown-item" href="">Contact</a>
+      </div>
+    </div>    
+  </nav>
+  <div id="main-container">
     <nav id="side-nav">
-        <div class="side-nav-items">
-            <a class="side-nav-item" onclick="loadAddition()">addition</a>
-            <a class="side-nav-item" onclick="loadSubtraction()">subtraction</a>
-            <a class="side-nav-item" onclick="loadMultiplication()">multiplication</a>
-            <a class="side-nav-item" onclick="loadDivision()">division</a>
-        </div>
+      <div class="side-nav-items">
+        <a class="side-nav-item" onclick="loadProblem('addition')">addition</a>
+        <a class="side-nav-item" onclick="loadProblem('subtraction')">subtraction</a>
+        <a class="side-nav-item" onclick="loadProblem('multiplication')">multiplication</a>
+        <a class="side-nav-item" onclick="loadProblem('division')">division</a>
+      </div>
     </nav>
     <main>
-        <div id="instructions-div">
-            <h1 id="instructions"></h1>
+      <div id="instructions-div">
+        <h1 id="instructions"></h1>
+      </div>
+      <div id="intro-card-container" class="intro-card-container active">
+        <div id="intro-card" class="card">
+          <div id="intro-front" class="side front font-s">
+            <p class="intro">Flashcards:<br>Because Practice Makes Perfect</p>
+          </div>
+          <div id="intro-back" class="side back">
+          </div>
         </div>
-        <div id="intro-card-container" class="intro-card-container active">
-            <div id="intro-card" class="card">
-                <div id="intro-front" class="side front font-s">
-                    <p class="intro">Flashcards:<br>Because Practice Makes Perfect</p>
-                </div>
-                <div id="intro-back" class="side back">
-                        
-                </div>
-            </div>
+      </div>
+      <div id="generated-card-container" class="generated-card-container">
+        <div id="generated-card" class="card">
+          <div id="front" class="side front">
+            <p id="problem" class="font-l"></p>
+            <p id="transition" class="font-s"></p>
+          </div>
+          <div id="back" class="side back font-l">
+            <p id="answer"></p>
+          </div>
         </div>
-        
-        <div id="generated-card-container" class="generated-card-container">
-            <div id="generated-card" class="card">
-                <div id="front" class="side front">
-                    <p id="problem" class="font-l"></p>
-                    <p id="transition" class="font-s"></p>
-                </div>
-                <div id="back" class="side back font-l">
-                    <p id="answer"></p>
-                </div>
-            </div>
-            <a id="left-arrow" class="left">❮</a> 
-            <a id="right-arrow" class="right">❯</a> 
-        </div>
+        <a id="left-arrow" class="left">❮</a> 
+        <a id="right-arrow" class="right">❯</a> 
+      </div>
     </main>
-    </div>
-<script src="js/dropdown.js"></script>   
+  </div>
 <script src="js/cardflip.js"></script>
-<script src="js/generateaddition.js"></script>
-<script src="js/generatesubtraction.js"></script>
-<script src="js/generatemultiplication.js"></script>
-<script src="js/generatedivision.js"></script>
-<script src="js/selector.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/selector.js"></script>  
 </body>
 </html>
