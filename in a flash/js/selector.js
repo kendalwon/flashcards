@@ -5,7 +5,7 @@ const numbersContainer = document.getElementById('numbers-card-container');
 const notesContainer = document.getElementById('notes-card-container');
 const instructions = document.getElementById('instructions');
 
-function loadLetters() {
+const loadLetters = () => {
     okay.innerHTML = "Okay. Let's learn letters!";
     delayedFlip();
     setTimeout(function() {
@@ -15,7 +15,7 @@ function loadLetters() {
     }, 1500);
 }
 
-function loadNumbers() {
+const loadNumbers = () => {
     okay.innerHTML = "All right. Let's learn numbers!";
     delayedFlip();
     setTimeout(function() {
@@ -25,7 +25,7 @@ function loadNumbers() {
     }, 1500);
 }
 
-function loadNotes() {
+const loadNotes = () => {
     okay.innerHTML = "Sounds good. Let's learn notes!";
     delayedFlip();
     setTimeout(function() {

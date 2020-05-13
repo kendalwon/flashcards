@@ -38,7 +38,7 @@ const notes = [
     const back = document.getElementById('back');
     const noteCard = document.getElementById('note-card');
 
-    function setNote() {
+    const setNote = () => {
         let index = Math.floor(Math.random() * 16);
         let currentNoteImg = notes[index].image;
         noteImg.src = currentNoteImg;
@@ -46,7 +46,7 @@ const notes = [
         noteAnswer.innerHTML = `This is the <span style='font-size:60px'>${currentNoteLetter}</span> note.`;
     }
 
-    function randomNote() {
+    const randomNote = () => {
         if (noteCard.classList.contains('flipped')) {
             noteCard.classList.remove('flipped');
             setTimeout(function(){setNote()}, 500);
