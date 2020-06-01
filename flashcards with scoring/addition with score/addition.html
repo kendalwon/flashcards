@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add.</title>
-    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add.</title>
+  <link href="https://fonts.googleapis.com/css?family=Cutive+Mono&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="media/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css"></link>
 </head>
 <body>
-    <nav>
-        <h1 id="title">Learn to Add.</h1>
-    </nav>
-    <main>
-        <div id="intro">
-            <p class="font-s">Click the correct answer.</p>
-        </div>
-        <div id="card-container">
-            <div id="card">
-                <p id="problem" class="font-l"></p>
-            </div>
-        </div>
-        <div id="response">
-            <button id="a" type="button"></button> 
-            <button id="b" type="button"></button> 
-            <button id="c" type="button"></button> 
-            <button id="d" type="button"></button> 
-            <button id="e" type="button"></button> 
-            <button id="f" type="button"></button> 
-            <button id="g" type="button"></button> 
-            <button id="h" type="button"></button> 
-        </div>
-        <div id="score">
-            <audio id="wrong-sound" src="media/sounds/wrong.wav"></audio>
-            <p><span id="current-score"></span></p>
-        </div>
-    </main>
+  <nav>
+    <h1 id="title">Learn to Add.</h1>
+  </nav>
+  <main>
+    <div id="intro">
+      <p class="font-s">Click the correct answer.</p>
+    </div>
+    <div id="card-container">
+      <div id="card">
+        <p id="problem" class="font-l"></p>
+      </div>
+    </div>
+    <div id="response">
+      <button id="a" 
+        class="button"
+        type="button">
+      </button> 
+      <button id="b" 
+        class="button"
+        type="button">
+      </button>
+      <button id="c" 
+        class="button"
+        type="button">
+      </button>
+      <button id="d" 
+        class="button"
+        type="button">
+      </button>
+      <button id="e" 
+        class="button"
+        type="button">
+      </button>
+    </div>
+    <div id="score">
+      <audio id="wrong-sound" src="media/sounds/wrong.wav"></audio>
+      <p><span id="current-score"></span></p>
+    </div>
+  </main>
 <script src="js/generateaddition.js"></script>
 </body>
 </html>
